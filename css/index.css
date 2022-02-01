@@ -15,54 +15,6 @@ h2 {
   text-align: center;
 }
 
-.bouton {
-  margin: auto;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 5px 10px 5px;
-  color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4da38e;
-}
-
-#titre {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 99%;
-}
-
-#author {
-  margin-top: 10px;
-  margin-bottom: 25px;
-  width: 99%;
-}
-
-#rechercher {
-  width: 125px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-  background-color: #4da38e;
-  color: white;
-  text-align: center;
-  border: none;
-  border-radius: 2px;
-  padding: 10px 0px 10px 0px;
-}
-
-#annuler {
-  width: 125px;
-  margin-bottom: 10px;
-  background-color: #da563f;
-  color: white;
-  border: none;
-  text-align: center;
-  border-radius: 2px;
-  padding: 10px 0px 10px 0px;
-}
-
 header {
   width: 100%;
   height: 100px;
@@ -76,6 +28,82 @@ header img {
   margin-right: auto;
   object-fit: cover;
   justify-content: flex-start;
+}
+
+.divButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divButton .button {
+  width: 200px;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4da38e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form .libelle {
+  font-weight: 600;
+}
+.form button {
+  width: 125px;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 0px 10px 0px;
+}
+.form #rechercher {
+  background-color: #4da38e;
+  margin-top: 15px;
+}
+.form #annuler {
+  background-color: #da563f;
+}
+
+#result, #favori {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#result .livre, #favori .livre {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+  background-color: #bebdbd;
+  border: 2px #696666 solid;
+}
+#result .livre .bookId, #favori .livre .bookId {
+  font-style: italic;
+}
+#result .livre .icon i, #favori .livre .icon i {
+  color: #4da38e;
+  position: relative;
+  font-size: 30px;
+  float: right;
+}
+#result .livre .pic, #favori .livre .pic {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 768px) {
+  #result .livre, #favori .livre {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
