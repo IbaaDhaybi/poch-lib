@@ -19,7 +19,7 @@ function displayBook(book,icon){
 }
 
 function displayBookMarked(html){ 
-    // return le html d'un livre dans resulat avec l'icon trash 
+    // return le html d'un livre dans resultat avec l'icon trash 
 return html.replace("fas fa-bookmark", "fas fa-trash-alt");
 
 }
